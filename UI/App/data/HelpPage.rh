@@ -1,0 +1,30 @@
+/* ====================================================================
+ * File: HelpPage.rh
+ * Created: 12/13/09
+ * Modified: 12/15/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef HELPPAGE_RH
+#define HELPPAGE_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT HELPPAGEARRAY
+    {
+    STRUCT pages[];
+    }
+
+STRUCT HELPPAGE
+    {
+    LONG bitmap;
+    LONG mask;
+    LTEXT txt="";
+    }
+
+#endif // HELPPAGE_RH
+
+// End of File

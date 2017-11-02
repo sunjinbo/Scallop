@@ -1,0 +1,31 @@
+/* ====================================================================
+ * File: ScaEngine.rh
+ * Created: 06/16/09
+ * Modified: 09/16/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef SCAENGINE_RH
+#define SCAENGINE_RH
+
+// RESOURCE STRUCTS
+STRUCT SCALLOPGAMELEVELLIST
+    {
+    BYTE ignorelist;
+    STRUCT list[];
+    }
+
+STRUCT SCALLOPGAMELEVEL
+    {
+    BYTE id;
+    WORD time;
+    WORD score;
+    WORD bonus;
+    LTEXT type;
+    LTEXT prompt;
+    }
+
+#endif // SCAENGINE_RH
+
+// End of file

@@ -1,0 +1,85 @@
+// ====================================================================
+// File: ScaTest.rss
+// Created: 08/17/09
+// Author: Sun Jinbo
+// Copyright (c): Tieto, All rights reserved
+// ==================================================================== */
+
+NAME HELL
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+#include "ScaTest.hrh"
+
+
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// ---------------------------------------------------------
+//   
+//    Default Document Name
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ---------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    menubar = r_ScaTest_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_ScaTest_menubar
+//   Menubar for ScaTest example
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_ScaTest_menubar
+    {
+    titles =
+        {
+        MENU_TITLE {menu_pane = r_ScaTest_menu;}
+        };
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_ScaTest_menu
+//   Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_ScaTest_menu
+    {
+    items = 
+        {
+        MENU_ITEM {command = EScaTestStart;  txt = "Start!";},
+        MENU_ITEM {command = EScaTestStop;  txt = "Stop";},
+        MENU_ITEM {command = EScaTestPause;  txt = "Pause";},
+        MENU_ITEM {command = EScaTestResume;  txt = "Resume";},
+        MENU_ITEM {command = EScaTestRestart;  txt = "Restart";},
+        MENU_ITEM {command = EScaTestRefresh;  txt = "Refresh";},
+        MENU_ITEM {command = EScaTestFuncKey;  txt = "FuncKey";},
+        MENU_ITEM {command = EScaTestMake;  txt = "Make";},
+        MENU_ITEM {command = EAknSoftkeyExit;   txt = "Exit";}
+        };
+    }

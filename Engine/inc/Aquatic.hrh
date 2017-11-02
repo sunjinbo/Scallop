@@ -1,0 +1,36 @@
+/* ====================================================================
+ * File: Aquatic.hrh
+ * Created: 06/13/09
+ * Modified: 06/13/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef AQUATIC_HRH
+#define AQUATIC_HRH
+
+// ENUMERATES
+enum TAquaticType
+    {
+    EAquaticNull = -1,
+    EBlueScallop, // 0
+    EDarkBlueScallop, // 1
+    EGreenScallop, // 2
+    EDarkGreenScallop, // 3
+    ERedScallop, // 4
+    EMulberryScallop, // 5
+    EOrangeScallop, // 6
+    EYellowScallop, // 7
+    EStarFish, // 8
+    ETurtle, // 9
+    EShark, // 10
+    EOctopus, // 11
+    ECuttleFish, // 12
+    ESeaCrab, // 13
+    EJellyfish, // 14
+    EAuqaticNumber
+    };
+
+#endif // AQUATIC_HRH
+
+// End of file

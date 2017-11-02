@@ -1,0 +1,922 @@
+/* ====================================================================
+ * File: Scallop.rss
+ * Created: 10/23/09
+ * Modified: 11/25/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+NAME SCAP
+
+// INLCUDE FILES
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+//#include <avkon.loc>
+#include <Button.rh>
+#include <Background.rh>
+#include <MenuBar.rh>
+#include <Scoreboard.rh>
+#include <ProgressBar.rh>
+#include <TextPane.rh>
+#include <Checkbox.rh>
+#include <InfoComponent.rh>
+#include <Icon.rh>
+#include <Board.rh>
+#include <btn.mbg>
+#include <bak.mbg>
+#include <scoreboard.mbg>
+#include <checkbox.mbg>
+#include <info.mbg>
+#include <icon.mbg>
+#include <board.mbg>
+#include "ModePage.rh"
+#include "HelpPage.rh"
+#include "Scallop.hrh"
+#include "Scallop.loc"
+
+// ----------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ----------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE {}
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+
+// ----------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ----------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    cba = R_AVKON_SOFTKEYS_EMPTY;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_menu_view
+//
+// ----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_scallop_view
+    {
+    cba = R_AVKON_SOFTKEYS_EMPTY;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_welcomeview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_welcomeview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_menuview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_menuview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_gameview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_gameview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_recordview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_recordview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_optionview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_optionview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_helpview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_helpview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+// ----------------------------------------------------
+//
+//    r_scallop_bak_aboutview
+//
+// ----------------------------------------------------
+//
+RESOURCE BACKGROUND r_scallop_bak_aboutview
+    {
+    bak = EMbmBakBak;
+    mask = EMbmBakBak_mask;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_empty
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_empty
+    {
+    id = EScallopCmdEmpty;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_welcome_note
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_welcome_note
+    {
+    id = EScallopCmdWelcome;
+    width = 120;
+    height = 30;
+    align = 1;
+    font = 45;
+    baseline = 15;
+    color = 0xff0000;
+    txt = qtn_scallop_welcome_note;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_start
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_start
+    {
+    id = EScallopCmdStart;
+    width = 358;
+    height = 70;
+    align = 1;
+    bitmap = EMbmBtnMenu;
+    mask = EMbmBtnMenu_mask;
+    font = 130;
+    baseline = 42;
+    color = 0xab0ff4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_mainmenu_start;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_option
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_option
+    {
+    id = EScallopCmdOption;
+    width = 358;
+    height = 70;
+    align = 1;
+    bitmap = EMbmBtnMenu;
+    mask = EMbmBtnMenu_mask;
+    font = 130;
+    baseline = 42;
+    color = 0x11e7f3;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_mainmenu_option;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_record
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_record
+    {
+    id = EScallopCmdRecord;
+    width = 358;
+    height = 70;
+    align = 1;
+    bitmap = EMbmBtnMenu;
+    mask = EMbmBtnMenu_mask;
+    font = 130;
+    baseline = 42;
+    color = 0xf46b0f;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_mainmenu_record;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_help
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_help
+    {
+    id = EScallopCmdHelp;
+    width = 358;
+    height = 70;
+    align = 1;
+    bitmap = EMbmBtnMenu;
+    mask = EMbmBtnMenu_mask;
+    font = 130;
+    baseline = 42;
+    color = 0x1bf218;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_mainmenu_help;
+    }
+
+
+// ----------------------------------------------------
+//    r_scallop_btn_quit
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_quit
+    {
+    id = EScallopCmdQuit;
+    width = 358;
+    height = 70;
+    align = 1;
+    bitmap = EMbmBtnMenu;
+    mask = EMbmBtnMenu_mask;
+    font = 130;
+    baseline = 42;
+    color = 0x0a0a09;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_mainmenu_quit;
+    }
+
+
+// ----------------------------------------------------
+//    r_scallop_btn_back
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_back
+    {
+    id = EScallopCmdBack;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_back;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_pause
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_pause
+    {
+    id = EScallopCmdPause;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_pause;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_resume
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_resume
+    {
+    id = EScallopCmdResume;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_resume;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_stop
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_stop
+    {
+    id = EScallopCmdStop;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_stop;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_restart
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_restart
+    {
+    id = EScallopCmdRestart;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_restart;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_about
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_about
+    {
+    id = EScallopCmdAbout;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_about;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_clear
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_clear
+    {
+    id = EScallopCmdClear;
+    align = 1;
+    font = 130;
+    baseline = 35;
+    color = 0x8712f4;
+    press_color = 0xaaaaaa;
+    txt = qtn_scallop_menubar_clear;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_btn_ok
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_btn_ok
+    {
+    id = EScallopCmdOk;
+    width = 50;
+    height = 50;
+    align = 2;
+    bitmap = EMbmBtnOk;
+    mask = EMbmBtnOk_mask;
+    font = 45;
+    baseline = 25;
+    color = 0x0000aa;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_mode_back
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_mode_back
+    {
+    id = EScallopCmdModeBack;
+    width = 18;
+    height = 18;
+    align = 1;
+    bitmap = EMbmBtnBack;
+    mask = EMbmBtnBack_mask;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_mode_forward
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_mode_forward
+    {
+    id = EScallopCmdModeForward;
+    width = 18;
+    height = 18;
+    align = 1;
+    bitmap = EMbmBtnForward;
+    mask = EMbmBtnForward_mask;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_help_back
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_help_back
+    {
+    id = EScallopCmdHelpBack;
+    width = 18;
+    height = 18;
+    align = 1;
+    bitmap = EMbmBtnBack;
+    mask = EMbmBtnBack_mask;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_help_forward
+// ----------------------------------------------------
+//
+RESOURCE BUTTON r_scallop_help_forward
+    {
+    id = EScallopCmdHelpForward;
+    width = 18;
+    height = 18;
+    align = 1;
+    bitmap = EMbmBtnForward;
+    mask = EMbmBtnForward_mask;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_doubleempty
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_doubleempty
+    {
+    btn1 = r_scallop_btn_empty;
+    btn2 = r_scallop_btn_empty;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_pauseback
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_pauseback
+    {
+    btn1 = r_scallop_btn_pause;
+    btn2 = r_scallop_btn_back;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_restartback
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_restartback
+    {
+    btn1 = r_scallop_btn_restart;
+    btn2 = r_scallop_btn_back;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_resumestop
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_resumestop
+    {
+    btn1 = r_scallop_btn_resume;
+    btn2 = r_scallop_btn_stop;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_aboutback
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_aboutback
+    {
+    btn1 = r_scallop_btn_about;
+    btn2 = r_scallop_btn_back;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_emptyback
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_emptyback
+    {
+    btn1 = r_scallop_btn_empty;
+    btn2 = r_scallop_btn_back;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_menubar_clearback
+// ----------------------------------------------------
+//
+RESOURCE MENUBAR r_scallop_menubar_clearback
+    {
+    btn1 = r_scallop_btn_clear;
+    btn2 = r_scallop_btn_back;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_scoreboard_level
+// ----------------------------------------------------
+//
+RESOURCE SCOREBOARD r_scallop_scoreboard_level
+    {
+    width = 32;
+    height = 32;
+    bitmap = EMbmScoreboardHippocampi;
+    mask = EMbmScoreboardHippocampi_mask;
+    font = 60;
+    baseline = 25;
+    color = 0x4ab2ad;
+    value = 1;
+    txt = qtn_scallop_game_level;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_scoreboard_score
+// ----------------------------------------------------
+//
+RESOURCE SCOREBOARD r_scallop_scoreboard_score
+    {
+    width = 32;
+    height = 32;
+    bitmap = EMbmScoreboardTropicalfish;
+    mask = EMbmScoreboardTropicalfish_mask;
+    font = 60;
+    baseline = 25;
+    color = 0x63dbe1;
+    value = 0;
+    txt = qtn_scallop_game_score;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_scoreboard_bonus
+// ----------------------------------------------------
+//
+RESOURCE SCOREBOARD r_scallop_scoreboard_bonus
+    {
+    width = 32;
+    height = 32;
+    bitmap = EMbmScoreboardStarfish;
+    mask = EMbmScoreboardStarfish_mask;
+    font = 60;
+    baseline = 25;
+    color = 0x3949d6;
+    value = 0;
+    txt = qtn_scallop_game_bonus;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_progress
+// ----------------------------------------------------
+//
+RESOURCE PROGRESSBAR r_scallop_progress
+    {
+    max_value = 10;
+    value = 0;
+    direction = 0;
+    border = 1;
+    color = 0xe17540;
+    border_color = 0xaaaaaa;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_option_sound_progress
+// ----------------------------------------------------
+//
+RESOURCE PROGRESSBAR r_scallop_option_sound_progress
+    {
+    max_value = 5;
+    value = 5;
+    direction = 1;
+    border = 1;
+    color = 0x7bff80;
+    border_color = 0xee0000;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_modes
+// ---------------------------------------------------------
+//
+RESOURCE MODEPAGEARRAY r_scallop_modes
+    {
+    pages = 
+        {
+        MODEPAGE
+            {
+            bitmap = EMbmIconClassic;
+            mask = EMbmIconClassic_mask;
+            title = qtn_scallop_mode_classic_title;
+            details = qtn_scallop_mode_classic_details;
+            },
+
+        MODEPAGE
+            {
+            bitmap = EMbmIconStrategy;
+            mask = EMbmIconStrategy_mask;
+            title = qtn_scallop_mode_strategy_title;
+            details = qtn_scallop_mode_strategy_details;
+            }
+/*
+        MODEPAGE
+            {
+            bitmap = EMbmIconArcade;
+            mask = EMbmIconArcade_mask;
+            title = qtn_scallop_mode_arcade_title;
+            details = qtn_scallop_mode_arcade_details;
+            },
+*/
+        };
+    }
+
+// ----------------------------------------------------
+//    r_scallop_option_sound_title
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_option_sound_title
+    {
+    line = 1;
+    font = 85;
+    baseline = 30;
+    align = 0;
+    color = 0x000000;
+    txt = qtn_scallop_option_sound;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_option_mode_title
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_option_mode_title
+    {
+    line = 1;
+    font = 85;
+    baseline = 30;
+    align = 0;
+    color = 0x000000;
+    txt = qtn_scallop_option_mode;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_option_mode_name
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_option_mode_name
+    {
+    line = 1;
+    font = 50;
+    baseline = 27;
+    align = 1;
+    color = 0x000000;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_option_mode_details
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_option_mode_details
+    {
+    line = 6;
+    font = 40;
+    baseline = 20;
+    align = 0;
+    color = 0x000000;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_help_title
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_help_title
+    {
+    line = 1;
+    font = 65;
+    baseline = 25;
+    align = 1;
+    color = 0x000000;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_help_first_text
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_help_first_text
+    {
+    line = 8;
+    font = 45;
+    baseline = 10;
+    align = 0;
+    color = 0x000000;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_help_second_text
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_help_second_text
+    {
+    line = 8;
+    font = 45;
+    baseline = 10;
+    align = 0;
+    color = 0x000000;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_game_info_textpane
+// ----------------------------------------------------
+//
+RESOURCE TEXTPANE r_scallop_game_info_textpane
+    {
+    line = 4;
+    font = 45;
+    baseline = 10;
+    align = 0;
+    color = 0x000000;
+    }
+
+// ----------------------------------------------------
+//    r_scallop_checkbox_tips
+// ----------------------------------------------------
+//
+RESOURCE CHECKBOX r_scallop_checkbox_tips
+    {
+    width = 20;
+    height = 20;
+    uncheck = EMbmCheckboxUncheck;
+    uncheck_mask = EMbmCheckboxUncheck_mask;
+    check = EMbmCheckboxCheck;
+    check_mask = EMbmCheckboxCheck_mask;
+    default_state = 1;
+    font = 45;
+    baseline = 15;
+    color = 0xe1001f;
+    align = 0;
+    txt = qtn_scallop_checkbox_tips;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_game_infocomponent
+// ---------------------------------------------------------
+//
+RESOURCE INFOCOMPONENT r_scallop_game_infocomponent
+    {
+    bitmap = EMbmInfoDlg;
+    mask = EMbmInfoDlg_mask;
+    textpane = r_scallop_game_info_textpane;
+    btn = r_scallop_btn_ok;
+    checkbox = r_scallop_checkbox_tips;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_option_barboard
+// ---------------------------------------------------------
+//
+RESOURCE BOARD r_scallop_option_barboard
+    {
+    width = 356;
+    height = 68;
+    bitmap = EMbmBoardBar;
+    mask = EMbmBoardBar_mask;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_option_modeboard
+// ---------------------------------------------------------
+//
+RESOURCE BOARD r_scallop_option_modeboard
+    {
+    width = 356;
+    height = 212;
+    bitmap = EMbmBoardMode;
+    mask = EMbmBoardMode_mask;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_help_helpboard
+// ---------------------------------------------------------
+//
+RESOURCE ICON r_scallop_welcome_brand
+    {
+    width = 230;
+    height = 100;
+    bitmap = EMbmIconNokia;
+    mask = EMbmIconNokia_mask;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_help_helpboard
+// ---------------------------------------------------------
+//
+RESOURCE ICON r_scallop_help_helpboard
+    {
+    width = 356;
+    height = 284;
+    bitmap = EMbmBoardHelp;
+    mask = EMbmBoardHelp_mask;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_help_first_picture
+// ---------------------------------------------------------
+//
+RESOURCE ICON r_scallop_help_first_picture
+    {
+    width = 160;
+    height = 124;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_help_second_picture
+// ---------------------------------------------------------
+//
+RESOURCE ICON r_scallop_help_second_picture
+    {
+    width = 160;
+    height = 124;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_option_classic
+// ---------------------------------------------------------
+//
+RESOURCE ICON r_scallop_option_classic
+    {
+    width = 110;
+    height = 85;
+    bitmap = EMbmIconClassic;
+    mask = EMbmIconClassic_mask;
+    }
+
+// ---------------------------------------------------------
+// r_scallop_helps
+// ---------------------------------------------------------
+//
+RESOURCE HELPPAGEARRAY r_scallop_helps
+    {
+    pages = 
+        {
+        HELPPAGE
+            {
+            bitmap = EMbmIconClassic;
+            mask = EMbmIconClassic_mask;
+            txt = qtn_scallop_help_classic;
+            },
+
+        HELPPAGE
+            {
+            bitmap = EMbmIconStrategy;
+            mask = EMbmIconStrategy_mask;
+            txt = qtn_scallop_help_strategy;
+            },
+
+        HELPPAGE
+            {
+            bitmap = EMbmIconClassic;
+            mask = EMbmIconClassic_mask;
+            txt = qtn_scallop_help_classic;
+            },
+
+        HELPPAGE
+            {
+            bitmap = EMbmIconStrategy;
+            mask = EMbmIconStrategy_mask;
+            txt = qtn_scallop_help_strategy;
+            },
+
+        HELPPAGE
+            {
+            bitmap = EMbmIconClassic;
+            mask = EMbmIconClassic_mask;
+            txt = qtn_scallop_help_classic;
+            },
+
+        HELPPAGE
+            {
+            bitmap = EMbmIconStrategy;
+            mask = EMbmIconStrategy_mask;
+            txt = qtn_scallop_help_strategy;
+            }
+
+        };
+    }
+
+// ---------------------------------------------------------
+// r_scallop_title_scallop
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_scallop_title_scallop
+    {
+    buf = qtn_scallop_app_title;
+    }
+
+// End of File

@@ -1,0 +1,3 @@
+﻿CHARACTER_SET UTF8
+#define qtn_scallop_combo "- Combo -\nSquare combos of 4 pearls, several combos \nmade at a stretch give you additional chain bonus."
+#define qtn_scallop_bonus_combo "Bonus combo\nBonus combos are made of 6 pearls.\nYou get bonus points for this combos \nin addtion for combo chain bonus."

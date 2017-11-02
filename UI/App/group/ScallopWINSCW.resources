@@ -1,0 +1,14 @@
+<resources>
+  <rsc sourcefile = "Scallop.rss" targetpath = "z\resource\apps" targetfile = "Scallop.rsc"
+ header = "true" sourcepath = "..\data">
+    <language id = "SC"/>
+  </rsc>
+  <rsc sourcefile = "Scallop_reg.rss" targetpath = "z\private\10003a3f\apps" targetfile = "Scallop_reg.rsc"
+ header = "false" sourcepath = "..\data">
+    <language id = "SC"/>
+  </rsc>
+  <rsc sourcefile = "Scallop_loc.rss" targetpath = "z\resource\apps" targetfile = "Scallop_loc.rsc"
+ header = "false" sourcepath = "..\data">
+    <language id = "SC"/>
+  </rsc>
+</resources>

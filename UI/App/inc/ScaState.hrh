@@ -1,0 +1,33 @@
+/* ====================================================================
+ * File: ScaState.hrh
+ * Created: 10/23/09
+ * Modified: 10/23/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef SCASTATE_HRH
+#define SCASTATE_HRH
+
+// ENUMERATES
+enum TStateCommand
+    {
+    EStateStart,
+    EStateRestart,
+    EStateResume,
+    EStatePause,
+    EStateStop,
+    EStateOption,
+    EStateRecord,
+    EStateHelp,
+    EStateAbout,
+    EStateQuit,
+    EStateBack,
+    EStateClear,
+    EStateTimeout,
+    EStateFailed
+    };
+
+#endif // SCASTATE_HRH
+
+// End of File

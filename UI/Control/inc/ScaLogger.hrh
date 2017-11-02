@@ -1,0 +1,26 @@
+/* ====================================================================
+ * File: ScaLogger.hrh
+ * Created: 09/21/09
+ * Modified: 09/21/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef SCALOGGER_HRH
+#define SCALOGGER_HRH
+
+/**
+* Trace definitions
+*/
+
+//#define ERROR_TRACE
+//#define INFO_TRACE
+//#define TIMESTAMP_TRACE
+//#define FUNC_TRACE
+
+// Tracing into file enabled, default RDebug
+//#define TRACE_INTO_FILE
+
+#endif // SCALOGGER_HRH
+
+// End of file

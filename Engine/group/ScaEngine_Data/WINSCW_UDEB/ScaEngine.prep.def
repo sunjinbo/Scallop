@@ -1,0 +1,8 @@
+EXPORTS
+	?ClickL@CScaEngine@@UAEXHH@Z @ 1 NONAME ; void CScaEngine::ClickL(int, int)
+	?DragL@CScaEngine@@UAEXHH@Z @ 2 NONAME ; void CScaEngine::DragL(int, int)
+	?HandleCommandL@CScaEngine@@UAEXW4TEngineCmd@@@Z @ 3 NONAME ; void CScaEngine::HandleCommandL(enum TEngineCmd)
+	?NewL@CClassicEngineFactory@@SAPAV1@XZ @ 4 NONAME ; class CClassicEngineFactory * CClassicEngineFactory::NewL(void)
+	?NewL@CStrategyEngineFactory@@SAPAV1@XZ @ 5 NONAME ; class CStrategyEngineFactory * CStrategyEngineFactory::NewL(void)
+
+

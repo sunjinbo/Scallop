@@ -1,0 +1,43 @@
+/* ====================================================================
+ * File: Scallop.hrh
+ * Created: 10/23/09
+ * Modified: 11/06/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef SCALLOP_HRH
+#define SCALLOP_HRH
+
+// -----------------------------------------------------
+// ENUMERATES
+// -----------------------------------------------------
+/** The command id in button **/
+enum TScallopCmdIds
+    {
+    EScallopCmdEmpty = 1, // start value must not be 0
+    EScallopCmdStart,
+    EScallopCmdOption,
+    EScallopCmdRecord,
+    EScallopCmdHelp,
+    EScallopCmdQuit,
+    EScallopCmdBack,
+    EScallopCmdPause,
+    EScallopCmdResume,
+    EScallopCmdStop,
+    EScallopCmdRestart,
+    EScallopCmdAbout,
+    EScallopCmdClear,
+    EScallopCmdSound,
+    EScallopCmdMode,
+    EScallopCmdOk,
+    EScallopCmdModeBack,
+    EScallopCmdModeForward,
+    EScallopCmdHelpBack,
+    EScallopCmdHelpForward,
+    EScallopCmdWelcome
+    };
+
+#endif // SCALLOP_HRH
+
+// End of File

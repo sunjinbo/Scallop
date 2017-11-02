@@ -1,0 +1,27 @@
+/* ====================================================================
+ * File: InfoComponent.rh
+ * Created: 12/06/09
+ * Modified: 12/06/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef INFOCOMPONENT_RH
+#define INFOCOMPONENT_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT INFOCOMPONENT
+    {
+    LONG bitmap;
+    LONG mask;
+    LLINK textpane;
+    LLINK btn;
+    LLINK checkbox;
+    }
+
+#endif // INFOCOMPONENT_RH
+
+// End of File

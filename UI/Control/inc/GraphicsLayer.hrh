@@ -1,0 +1,33 @@
+/* ====================================================================
+ * File: GraphicsLayer.hrh
+ * Created: 10/28/09
+ * Modified: 10/28/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef GRAPHICSLAYER_HRH
+#define GRAPHICSLAYER_HRH
+
+// ENUMERATES
+enum TLayerId
+    {
+    EFoundation, // 0
+    EBakBackground, // 1
+    EBakForeground, // 2
+    EBakEffects, // 3
+    ECtrlBackground, // 4
+    ECtrlForeground, // 5
+    ECtrlEffects1, // 6
+    ECtrlEffects2, // 7
+    ECtrlText, // 8
+    EDlgBackground, // 9
+    EDlgForeground, // 10
+    EDlgEffects, // 11
+    EDlgText, // 12
+    EReserve // 13
+    };
+
+#endif // GRAPHICSLAYER_HRH
+
+// End of file

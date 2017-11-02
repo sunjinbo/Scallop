@@ -1,0 +1,28 @@
+/* ====================================================================
+ * File: ProgressBar.rh
+ * Created: 12/02/09
+ * Modified: 12/02/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef PROGRESSBAR_RH
+#define PROGRESSBAR_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT PROGRESSBAR
+    {
+    LONG max_value;
+    LONG value;
+    LONG direction;
+    LONG border;
+    LONG color;
+    LONG border_color;
+    }
+
+#endif // PROGRESSBAR_RH
+
+// End of File

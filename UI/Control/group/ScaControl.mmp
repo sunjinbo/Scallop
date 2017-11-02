@@ -1,0 +1,69 @@
+/* ====================================================================
+ * File: ScaControl.mmp
+ * Created: 10/28/09
+ * Modified: 12/08/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+TARGET                  ScaControl.dll
+TARGETTYPE              dll
+UID                     0x1000008d 0xe01ff1d4
+
+SOURCEPATH              ..\src
+SOURCE                  BaseContainer.cpp
+SOURCE                  GraphicsManager.cpp
+SOURCE                  GraphicsLayer.cpp
+SOURCE                  Button.cpp
+SOURCE                  MenuBar.cpp
+SOURCE                  Background.cpp
+SOURCE                  ResReader.cpp
+SOURCE                  Matrix.cpp
+SOURCE                  MatrixTask.cpp
+SOURCE                  MatrixTaskScheduler.cpp
+SOURCE                  Scoreboard.cpp
+SOURCE                  ProgressBar.cpp
+SOURCE                  FuncKeyPane.cpp
+SOURCE                  Icon.cpp
+SOURCE                  TextPane.cpp
+SOURCE                  Checkbox.cpp
+SOURCE                  InfoComponent.cpp
+SOURCE                  Board.cpp
+
+USERINCLUDE             ..\inc
+SYSTEMINCLUDE           \epoc32\include
+SYSTEMINCLUDE           \epoc32\include\scallop
+
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE           \epoc32\include\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\applications
+SYSTEMINCLUDE           \epoc32\include\domain\osextensions
+SYSTEMINCLUDE           \epoc32\include\osextensions
+SYSTEMINCLUDE           \epoc32\include\domain\middleware\loc
+#endif
+
+
+LIBRARY                 euser.lib
+LIBRARY                 cone.lib
+LIBRARY                 fbscli.lib
+LIBRARY                 bitgdi.lib
+LIBRARY                 bafl.lib
+LIBRARY                 gdi.lib
+LIBRARY                 avkon.lib
+LIBRARY                 eikcore.lib 
+LIBRARY                 ws32.lib // RWindow
+LIBRARY                 commonengine.lib // StringLoader
+LIBRARY                 efsrv.lib
+LIBRARY                 flogger.lib
+LIBRARY                 scautils.lib
+
+#ifdef __S60_50__
+LANG LANGUAGE_IDS
+#else
+LANG SC
+#endif
+
+CAPABILITY NONE
+
+// End of File

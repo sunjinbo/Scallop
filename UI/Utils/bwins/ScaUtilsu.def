@@ -1,0 +1,13 @@
+EXPORTS
+	??1CBmpUtils@@UAE@XZ @ 1 NONAME ; CBmpUtils::~CBmpUtils(void)
+	??1CSvgUtils@@UAE@XZ @ 2 NONAME ; CSvgUtils::~CSvgUtils(void)
+	?Bitmap@CBmpUtils@@UBEPAVCFbsBitmap@@H@Z @ 3 NONAME ; class CFbsBitmap * CBmpUtils::Bitmap(int) const
+	?Bitmap@CSvgUtils@@UBEPAVCFbsBitmap@@H@Z @ 4 NONAME ; class CFbsBitmap * CSvgUtils::Bitmap(int) const
+	?NewL@CBmpUtils@@SAPAV1@ABVTDesC16@@HH@Z @ 5 NONAME ; class CBmpUtils * CBmpUtils::NewL(class TDesC16 const &, int, int)
+	?NewL@CSvgUtils@@SAPAV1@ABVTDesC16@@HH@Z @ 6 NONAME ; class CSvgUtils * CSvgUtils::NewL(class TDesC16 const &, int, int)
+	?NewLC@CSvgUtils@@SAPAV1@ABVTDesC16@@HH@Z @ 7 NONAME ; class CSvgUtils * CSvgUtils::NewLC(class TDesC16 const &, int, int)
+	?SetSize@CBmpUtils@@UAEXHVTSize@@@Z @ 8 NONAME ; void CBmpUtils::SetSize(int, class TSize)
+	?SetSize@CSvgUtils@@UAEXHVTSize@@@Z @ 9 NONAME ; void CSvgUtils::SetSize(int, class TSize)
+	?SetSizeAndRotation@CBmpUtils@@UAEXHVTSize@@H@Z @ 10 NONAME ; void CBmpUtils::SetSizeAndRotation(int, class TSize, int)
+	?SetSizeAndRotation@CSvgUtils@@UAEXHVTSize@@H@Z @ 11 NONAME ; void CSvgUtils::SetSizeAndRotation(int, class TSize, int)
+

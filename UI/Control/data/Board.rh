@@ -1,0 +1,26 @@
+/* ====================================================================
+ * File: Board.rh
+ * Created: 12/16/09
+ * Modified: 12/16/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef BOARD_RH
+#define BOARD_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT BOARD
+    {
+    LONG width;
+    LONG height;
+    LONG bitmap;
+    LONG mask;
+    }
+
+#endif // BOARD_RH
+
+// End of File

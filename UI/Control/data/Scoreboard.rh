@@ -1,0 +1,31 @@
+/* ====================================================================
+ * File: Scoreboard.rh
+ * Created: 11/25/09
+ * Modified: 11/25/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef SCOREBOARD_RH
+#define SCOREBOARD_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT SCOREBOARD
+    {
+    LONG width;
+    LONG height;
+    LONG bitmap;
+    LONG mask;
+    LONG font;
+    LONG baseline;
+    LONG color;
+    LONG value;
+    LTEXT txt="";
+    }
+
+#endif // SCOREBOARD_RH
+
+// End of File

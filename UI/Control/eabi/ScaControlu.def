@@ -1,0 +1,181 @@
+EXPORTS
+	_ZN10CResReader12ResourceDataEi @ 1 NONAME
+	_ZN10CResReader4NewLER3RFs4TBufILi256EE @ 2 NONAME
+	_ZN10CResReaderD0Ev @ 3 NONAME
+	_ZN10CResReaderD1Ev @ 4 NONAME
+	_ZN10CResReaderD2Ev @ 5 NONAME
+	_ZN11CScoreboard11AppendValueEi @ 6 NONAME
+	_ZN11CScoreboard11SetIconSizeERK5TSize @ 7 NONAME
+	_ZN11CScoreboard13SetFontHeightEi @ 8 NONAME
+	_ZN11CScoreboard15SetTextBaselineEi @ 9 NONAME
+	_ZN11CScoreboard22ConstructFromResourceLER15TResourceReader @ 10 NONAME
+	_ZN11CScoreboard4NewLER16CGraphicsManagerRK5TRect @ 11 NONAME
+	_ZN11CScoreboard7SetMaskEP10CFbsBitmap @ 12 NONAME
+	_ZN11CScoreboard8SetColorERK4TRgb @ 13 NONAME
+	_ZN11CScoreboard8SetValueEi @ 14 NONAME
+	_ZN11CScoreboard9SetBitmapEP10CFbsBitmap @ 15 NONAME
+	_ZN11CScoreboardD0Ev @ 16 NONAME
+	_ZN11CScoreboardD1Ev @ 17 NONAME
+	_ZN11CScoreboardD2Ev @ 18 NONAME
+	_ZN12CFuncKeyPane10SetAndDrawE12TAquaticTypei @ 19 NONAME
+	_ZN12CFuncKeyPane4NewLER16CGraphicsManagerRK5TRect @ 20 NONAME
+	_ZN12CFuncKeyPane5ClearEv @ 21 NONAME
+	_ZN12CFuncKeyPaneD0Ev @ 22 NONAME
+	_ZN12CFuncKeyPaneD1Ev @ 23 NONAME
+	_ZN12CFuncKeyPaneD2Ev @ 24 NONAME
+	_ZN12CProgressBar10SetAndDrawEi @ 25 NONAME
+	_ZN12CProgressBar11SetMaxValueEi @ 26 NONAME
+	_ZN12CProgressBar13SetDirectionLENS_10TDirectionE @ 27 NONAME
+	_ZN12CProgressBar14SetBorderColorERK4TRgb @ 28 NONAME
+	_ZN12CProgressBar16DecrementAndDrawEi @ 29 NONAME
+	_ZN12CProgressBar16IncrementAndDrawEi @ 30 NONAME
+	_ZN12CProgressBar22ConstructFromResourceLER15TResourceReader @ 31 NONAME
+	_ZN12CProgressBar4NewLER16CGraphicsManagerRK5TRect @ 32 NONAME
+	_ZN12CProgressBar8SetColorERK4TRgb @ 33 NONAME
+	_ZN12CProgressBar9SetBorderEi @ 34 NONAME
+	_ZN12CProgressBarD0Ev @ 35 NONAME
+	_ZN12CProgressBarD1Ev @ 36 NONAME
+	_ZN12CProgressBarD2Ev @ 37 NONAME
+	_ZN14CBaseContainer10ConstructLERK5TRect @ 38 NONAME
+	_ZN14CBaseContainer11SetMenuBarLEi @ 39 NONAME
+	_ZN14CBaseContainer11SizeChangedEv @ 40 NONAME
+	_ZN14CBaseContainer14SetBackgroundLEi @ 41 NONAME
+	_ZN14CBaseContainer18HandleButtonEventLEPK7CButton @ 42 NONAME
+	_ZN14CBaseContainer20HandleResourceChangeEi @ 43 NONAME
+	_ZN14CBaseContainerC1ER15MButtonObserverR10MResReader @ 44 NONAME
+	_ZN14CBaseContainerC2ER15MButtonObserverR10MResReader @ 45 NONAME
+	_ZN14CBaseContainerD0Ev @ 46 NONAME
+	_ZN14CBaseContainerD1Ev @ 47 NONAME
+	_ZN14CBaseContainerD2Ev @ 48 NONAME
+	_ZN14CInfoComponent10SetVisibleEi @ 49 NONAME
+	_ZN14CInfoComponent10StartTimerEv @ 50 NONAME
+	_ZN14CInfoComponent11SetObserverER22MInfoComponentObserver @ 51 NONAME
+	_ZN14CInfoComponent12RestartTimerEi @ 52 NONAME
+	_ZN14CInfoComponent12SetResReaderER10MResReader @ 53 NONAME
+	_ZN14CInfoComponent18SetInfoResourceIdLEi @ 54 NONAME
+	_ZN14CInfoComponent4NewLER16CGraphicsManagerRK5TRect @ 55 NONAME
+	_ZN14CInfoComponent8SetTextLERK7TDesC16 @ 56 NONAME
+	_ZN14CInfoComponent9StopTimerEv @ 57 NONAME
+	_ZN14CInfoComponentD0Ev @ 58 NONAME
+	_ZN14CInfoComponentD1Ev @ 59 NONAME
+	_ZN14CInfoComponentD2Ev @ 60 NONAME
+	_ZN5CIcon10SetBitmapLEi @ 61 NONAME
+	_ZN5CIcon10SetVisibleEi @ 62 NONAME
+	_ZN5CIcon22ConstructFromResourceLER15TResourceReader @ 63 NONAME
+	_ZN5CIcon4NewLER16CGraphicsManagerRK5TRect @ 64 NONAME
+	_ZN5CIcon5ClearEv @ 65 NONAME
+	_ZN5CIcon7ResizeLERK5TRect @ 66 NONAME
+	_ZN5CIcon7SetMaskEP10CFbsBitmap @ 67 NONAME
+	_ZN5CIcon8SetMaskLEi @ 68 NONAME
+	_ZN5CIcon9SetBitmapEP10CFbsBitmap @ 69 NONAME
+	_ZN5CIconD0Ev @ 70 NONAME
+	_ZN5CIconD1Ev @ 71 NONAME
+	_ZN5CIconD2Ev @ 72 NONAME
+	_ZN6CBoard10SetBitmapLEi @ 73 NONAME
+	_ZN6CBoard10SetVisibleEi @ 74 NONAME
+	_ZN6CBoard22ConstructFromResourceLER15TResourceReader @ 75 NONAME
+	_ZN6CBoard4NewLER16CGraphicsManagerRK5TRect @ 76 NONAME
+	_ZN6CBoard5ClearEv @ 77 NONAME
+	_ZN6CBoard7ResizeLERK5TRect @ 78 NONAME
+	_ZN6CBoard7SetMaskEP10CFbsBitmap @ 79 NONAME
+	_ZN6CBoard8SetMaskLEi @ 80 NONAME
+	_ZN6CBoard9SetBitmapEP10CFbsBitmap @ 81 NONAME
+	_ZN6CBoardD0Ev @ 82 NONAME
+	_ZN6CBoardD1Ev @ 83 NONAME
+	_ZN6CBoardD2Ev @ 84 NONAME
+	_ZN7CButton10SetVisibleEi @ 85 NONAME
+	_ZN7CButton11SetObserverEP15MButtonObserver @ 86 NONAME
+	_ZN7CButton12SetTextAlignEN16CGraphicsContext10TTextAlignE @ 87 NONAME
+	_ZN7CButton13SetFontHeightEi @ 88 NONAME
+	_ZN7CButton13SetPressColorERK4TRgb @ 89 NONAME
+	_ZN7CButton15SetTextBaselineEi @ 90 NONAME
+	_ZN7CButton16SetIconAttributeERK5TSize6TAlign @ 91 NONAME
+	_ZN7CButton22ConstructFromResourceLER15TResourceReader @ 92 NONAME
+	_ZN7CButton4NewLER16CGraphicsManagerRK5TRect @ 93 NONAME
+	_ZN7CButton5SetIdEi @ 94 NONAME
+	_ZN7CButton7SetFlagEi @ 95 NONAME
+	_ZN7CButton7SetMaskEP10CFbsBitmap @ 96 NONAME
+	_ZN7CButton8SetColorERK4TRgb @ 97 NONAME
+	_ZN7CButton8SetTextLERK7TDesC16 @ 98 NONAME
+	_ZN7CButton9SetBitmapEP10CFbsBitmap @ 99 NONAME
+	_ZN7CButtonD0Ev @ 100 NONAME
+	_ZN7CButtonD1Ev @ 101 NONAME
+	_ZN7CButtonD2Ev @ 102 NONAME
+	_ZN7CMatrix11SetObserverEP15MMatrixObserver @ 103 NONAME
+	_ZN7CMatrix14UpdateAquaticLE14TAquaticActionRK6RArrayI12TAquaticDataE @ 104 NONAME
+	_ZN7CMatrix4NewLER16CGraphicsManagerRK5TRect @ 105 NONAME
+	_ZN7CMatrix8ShowPathERK6RArrayI6TPointE @ 106 NONAME
+	_ZN7CMatrix8ShowTipsEi @ 107 NONAME
+	_ZN7CMatrix9ClearPathEv @ 108 NONAME
+	_ZN7CMatrixD0Ev @ 109 NONAME
+	_ZN7CMatrixD1Ev @ 110 NONAME
+	_ZN7CMatrixD2Ev @ 111 NONAME
+	_ZN9CCheckbox10SetVisibleEi @ 112 NONAME
+	_ZN9CCheckbox11SetObserverER17MCheckboxObserver @ 113 NONAME
+	_ZN9CCheckbox22ConstructFromResourceLER15TResourceReader @ 114 NONAME
+	_ZN9CCheckbox4NewLER16CGraphicsManagerRK5TRect @ 115 NONAME
+	_ZN9CCheckbox8SetCheckEi @ 116 NONAME
+	_ZN9CCheckboxD0Ev @ 117 NONAME
+	_ZN9CCheckboxD1Ev @ 118 NONAME
+	_ZN9CCheckboxD2Ev @ 119 NONAME
+	_ZN9CTextPane10SetVisibleEi @ 120 NONAME
+	_ZN9CTextPane12SetTextAlignEN16CGraphicsContext10TTextAlignE @ 121 NONAME
+	_ZN9CTextPane13SetFontHeightEi @ 122 NONAME
+	_ZN9CTextPane15SetTextBaselineEi @ 123 NONAME
+	_ZN9CTextPane22ConstructFromResourceLER15TResourceReader @ 124 NONAME
+	_ZN9CTextPane4NewLER16CGraphicsManagerRK5TRect @ 125 NONAME
+	_ZN9CTextPane7ResizeLERK5TRect @ 126 NONAME
+	_ZN9CTextPane8SetColorERK4TRgb @ 127 NONAME
+	_ZN9CTextPane8SetTextLERK7TDesC16 @ 128 NONAME
+	_ZN9CTextPaneD0Ev @ 129 NONAME
+	_ZN9CTextPaneD1Ev @ 130 NONAME
+	_ZN9CTextPaneD2Ev @ 131 NONAME
+	_ZNK11CScoreboard5ValueEv @ 132 NONAME
+	_ZNK12CFuncKeyPane11CurrentTypeEv @ 133 NONAME
+	_ZNK12CFuncKeyPane12CurrentValueEv @ 134 NONAME
+	_ZNK12CFuncKeyPane6IsFullEv @ 135 NONAME
+	_ZNK12CFuncKeyPane7IsEmptyEv @ 136 NONAME
+	_ZNK12CProgressBar12CurrentValueEv @ 137 NONAME
+	_ZNK12CProgressBar6BorderEv @ 138 NONAME
+	_ZNK12CProgressBar8MaxValueEv @ 139 NONAME
+	_ZNK7CButton2IdEv @ 140 NONAME
+	_ZNK9CCheckbox7CheckedEv @ 141 NONAME
+	_ZTI10CResReader @ 142 NONAME ; #<TI>#
+	_ZTI11CBackground @ 143 NONAME ; #<TI>#
+	_ZTI11CMatrixTask @ 144 NONAME ; #<TI>#
+	_ZTI11CScoreboard @ 145 NONAME ; #<TI>#
+	_ZTI12CFuncKeyPane @ 146 NONAME ; #<TI>#
+	_ZTI12CProgressBar @ 147 NONAME ; #<TI>#
+	_ZTI14CBaseContainer @ 148 NONAME ; #<TI>#
+	_ZTI14CGraphicsLayer @ 149 NONAME ; #<TI>#
+	_ZTI14CInfoComponent @ 150 NONAME ; #<TI>#
+	_ZTI16CGraphicsManager @ 151 NONAME ; #<TI>#
+	_ZTI20CMatrixTaskScheduler @ 152 NONAME ; #<TI>#
+	_ZTI5CIcon @ 153 NONAME ; #<TI>#
+	_ZTI6CBoard @ 154 NONAME ; #<TI>#
+	_ZTI7CButton @ 155 NONAME ; #<TI>#
+	_ZTI7CMatrix @ 156 NONAME ; #<TI>#
+	_ZTI8CMenuBar @ 157 NONAME ; #<TI>#
+	_ZTI9CCheckbox @ 158 NONAME ; #<TI>#
+	_ZTI9CTextPane @ 159 NONAME ; #<TI>#
+	_ZTV10CResReader @ 160 NONAME ; #<VT>#
+	_ZTV11CBackground @ 161 NONAME ; #<VT>#
+	_ZTV11CMatrixTask @ 162 NONAME ; #<VT>#
+	_ZTV11CScoreboard @ 163 NONAME ; #<VT>#
+	_ZTV12CFuncKeyPane @ 164 NONAME ; #<VT>#
+	_ZTV12CProgressBar @ 165 NONAME ; #<VT>#
+	_ZTV14CBaseContainer @ 166 NONAME ; #<VT>#
+	_ZTV14CGraphicsLayer @ 167 NONAME ; #<VT>#
+	_ZTV14CInfoComponent @ 168 NONAME ; #<VT>#
+	_ZTV16CGraphicsManager @ 169 NONAME ; #<VT>#
+	_ZTV20CMatrixTaskScheduler @ 170 NONAME ; #<VT>#
+	_ZTV5CIcon @ 171 NONAME ; #<VT>#
+	_ZTV6CBoard @ 172 NONAME ; #<VT>#
+	_ZTV7CButton @ 173 NONAME ; #<VT>#
+	_ZTV7CMatrix @ 174 NONAME ; #<VT>#
+	_ZTV8CMenuBar @ 175 NONAME ; #<VT>#
+	_ZTV9CCheckbox @ 176 NONAME ; #<VT>#
+	_ZTV9CTextPane @ 177 NONAME ; #<VT>#
+	_ZThn4_N10CResReader12ResourceDataEi @ 178 NONAME ; #<thunk>#
+	_ZThn52_N14CBaseContainer18HandleButtonEventLEPK7CButton @ 179 NONAME ; #<thunk>#
+

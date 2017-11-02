@@ -1,0 +1,62 @@
+; ============================================================================
+;  File: Scallop.pkg
+;  Created: 11/10/09
+;  Modified: 12/14/09
+;  Author: Sun Jinbo
+;  Copyright (c): Tieto, All rights reserved
+; ============================================================================
+;
+
+;Languages
+&EN
+
+;Header
+#{"Scallop"}, (0xe01ff1d2), 0, 0, 0
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Localised Vendor name
+%{"Forum Nokia"}
+
+;Unique Vendor name
+:"Forum Nokia"
+
+;Entries
+"\epoc32\release\armv5\urel\Scallop.exe"-"!:\sys\bin\Scallop.exe"
+"\epoc32\data\Z\Resource\apps\Scallop_icon.mif"-"!:\resource\apps\Scallop_icon.mif"
+"\epoc32\data\Z\Resource\apps\Scallop.rsc"-"!:\resource\apps\Scallop.rsc"
+"\epoc32\data\Z\Resource\apps\Scallop_loc.rsc"-"!:\resource\apps\Scallop_loc.rsc"
+"\epoc32\data\Z\private\10003a3f\apps\Scallop_reg.rsc"-"!:\private\10003a3f\import\apps\Scallop_reg.rsc"
+
+"\epoc32\release\armv5\urel\ScaControl.dll"-"!:\sys\bin\ScaControl.dll"
+
+"\epoc32\data\Z\Resource\apps\matrix.mbm"-"!:\resource\apps\matrix.mbm"
+"\epoc32\data\Z\Resource\apps\bak.mbm"-"!:\resource\apps\bak.mbm"
+"\epoc32\data\Z\Resource\apps\btn.mbm"-"!:\resource\apps\btn.mbm"
+"\epoc32\data\Z\Resource\apps\matrix.mbm"-"!:\resource\apps\matrix.mbm"
+"\epoc32\data\Z\Resource\apps\scoreboard.mbm"-"!:\resource\apps\scoreboard.mbm"
+"\epoc32\data\Z\Resource\apps\checkbox.mbm"-"!:\resource\apps\checkbox.mbm"
+"\epoc32\data\Z\Resource\apps\menubar.mbm"-"!:\resource\apps\menubar.mbm"
+"\epoc32\data\Z\Resource\apps\info.mbm"-"!:\resource\apps\info.mbm"
+"\epoc32\data\Z\Resource\apps\icon.mbm"-"!:\resource\apps\icon.mbm"
+"\epoc32\data\Z\Resource\apps\board.mbm"-"!:\resource\apps\board.mbm"
+"\epoc32\data\Z\Resource\apps\matrix.mif"-"!:\resource\apps\matrix.mif"
+"\epoc32\data\Z\Resource\apps\bak.mif"-"!:\resource\apps\bak.mif"
+"\epoc32\data\Z\Resource\apps\btn.mif"-"!:\resource\apps\btn.mif"
+"\epoc32\data\Z\Resource\apps\matrix.mif"-"!:\resource\apps\matrix.mif"
+"\epoc32\data\Z\Resource\apps\scoreboard.mif"-"!:\resource\apps\scoreboard.mif"
+"\epoc32\data\Z\Resource\apps\checkbox.mif"-"!:\resource\apps\checkbox.mif"
+"\epoc32\data\Z\Resource\apps\info.mif"-"!:\resource\apps\info.mif"
+"\epoc32\data\Z\Resource\apps\board.mif"-"!:\resource\apps\board.mif"
+"\epoc32\data\Z\Resource\apps\menubar.mif"-"!:\resource\apps\menubar.mif"
+
+"\epoc32\release\armv5\urel\ScaUtils.dll"-"!:\sys\bin\ScaUtils.dll"
+
+"\epoc32\release\armv5\urel\ScaEngine.dll"-"!:\sys\bin\ScaEngine.dll"
+"\epoc32\data\z\resource\apps\ScaEngine.rsc"-"!:\resource\apps\ScaEngine.rsc"
+
+"\epoc32\winscw\c\private\e01ff1d2\strategy\l1"-"!:\private\e01ff1d2\strategy\l1"
+"\epoc32\winscw\c\private\e01ff1d2\strategy\l1"-"!:\private\e01ff1d2\strategy\l1"
+
+;End of File

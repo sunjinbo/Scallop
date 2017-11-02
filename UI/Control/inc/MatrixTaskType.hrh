@@ -1,0 +1,24 @@
+/* ====================================================================
+ * File: MatrixTaskType.hrh
+ * Created: 11/07/09
+ * Modified: 11/07/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef MATRIXTASK_HRH
+#define MATRIXTASK_HRH
+
+// ENUMERATES
+enum TMatrixTaskType
+    {
+    EMatrixTaskDrawn,
+    EMatrixTaskRemoved,
+    EMatrixTaskDarken,
+    EMatrixTaskLighten,
+    EMatrixTaskBlasting
+    };
+
+#endif // MATRIXTASK_HRH
+
+// End of File

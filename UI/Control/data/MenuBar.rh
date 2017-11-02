@@ -1,0 +1,24 @@
+/* ====================================================================
+ * File: MenuBar.rh
+ * Created: 10/31/09
+ * Modified: 10/31/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef MENUBAR_RH
+#define MENUBAR_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT MENUBAR
+    {
+    LLINK btn1;
+    LLINK btn2;
+    }
+
+#endif // MENUBAR_RH
+
+// End of File

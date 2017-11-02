@@ -1,0 +1,43 @@
+EXPORTS
+	_ZN10CScaEngine14HandleCommandLE10TEngineCmd @ 1 NONAME
+	_ZN10CScaEngine5DragLEii @ 2 NONAME
+	_ZN10CScaEngine6ClickLEii @ 3 NONAME
+	_ZN21CClassicEngineFactory4NewLEv @ 4 NONAME
+	_ZN22CStrategyEngineFactory4NewLEv @ 5 NONAME
+	_ZTI10CGameLevel @ 6 NONAME ; #<TI>#
+	_ZTI10CScaEngine @ 7 NONAME ; #<TI>#
+	_ZTI12CScorekeeper @ 8 NONAME ; #<TI>#
+	_ZTI13CFuncKeyUtils @ 9 NONAME ; #<TI>#
+	_ZTI13CGameLevelMgr @ 10 NONAME ; #<TI>#
+	_ZTI14CComboBehavior @ 11 NONAME ; #<TI>#
+	_ZTI15CAquaticCreator @ 12 NONAME ; #<TI>#
+	_ZTI19CClassicScorekeeper @ 13 NONAME ; #<TI>#
+	_ZTI20CStrategyScorekeeper @ 14 NONAME ; #<TI>#
+	_ZTI21CClassicComboBehavior @ 15 NONAME ; #<TI>#
+	_ZTI21CClassicEngineFactory @ 16 NONAME ; #<TI>#
+	_ZTI22CStrategyComboBehavior @ 17 NONAME ; #<TI>#
+	_ZTI22CStrategyEngineFactory @ 18 NONAME ; #<TI>#
+	_ZTI7CMatrix @ 19 NONAME ; #<TI>#
+	_ZTI8CAquatic @ 20 NONAME ; #<TI>#
+	_ZTI8CScaPath @ 21 NONAME ; #<TI>#
+	_ZTI8CScallop @ 22 NONAME ; #<TI>#
+	_ZTI9CStarFish @ 23 NONAME ; #<TI>#
+	_ZTV10CGameLevel @ 24 NONAME ; #<VT>#
+	_ZTV10CScaEngine @ 25 NONAME ; #<VT>#
+	_ZTV12CScorekeeper @ 26 NONAME ; #<VT>#
+	_ZTV13CFuncKeyUtils @ 27 NONAME ; #<VT>#
+	_ZTV13CGameLevelMgr @ 28 NONAME ; #<VT>#
+	_ZTV14CComboBehavior @ 29 NONAME ; #<VT>#
+	_ZTV15CAquaticCreator @ 30 NONAME ; #<VT>#
+	_ZTV19CClassicScorekeeper @ 31 NONAME ; #<VT>#
+	_ZTV20CStrategyScorekeeper @ 32 NONAME ; #<VT>#
+	_ZTV21CClassicComboBehavior @ 33 NONAME ; #<VT>#
+	_ZTV21CClassicEngineFactory @ 34 NONAME ; #<VT>#
+	_ZTV22CStrategyComboBehavior @ 35 NONAME ; #<VT>#
+	_ZTV22CStrategyEngineFactory @ 36 NONAME ; #<VT>#
+	_ZTV7CMatrix @ 37 NONAME ; #<VT>#
+	_ZTV8CAquatic @ 38 NONAME ; #<VT>#
+	_ZTV8CScaPath @ 39 NONAME ; #<VT>#
+	_ZTV8CScallop @ 40 NONAME ; #<VT>#
+	_ZTV9CStarFish @ 41 NONAME ; #<VT>#
+

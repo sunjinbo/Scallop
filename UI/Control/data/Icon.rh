@@ -1,0 +1,26 @@
+/* ====================================================================
+ * File: Icon.rh
+ * Created: 12/13/09
+ * Modified: 12/13/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef ICON_RH
+#define ICON_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT ICON
+    {
+    LONG width;
+    LONG height;
+    LONG bitmap;
+    LONG mask;
+    }
+
+#endif // ICON_RH
+
+// End of File

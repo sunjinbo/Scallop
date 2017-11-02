@@ -1,0 +1,19 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 10/29/09
+ * Modified: 10/29/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_MMPFILES
+ScaUtils.mmp
+
+PRJ_EXPORTS
+..\inc\BitmapUtils.h                           \epoc32\include\Scallop\BitmapUtils.h
+..\inc\BmpUtils.h                              \epoc32\include\Scallop\BmpUtils.h
+..\inc\SvgUtils.h                               \epoc32\include\Scallop\SvgUtils.h
+
+//..\inc\AudioUtils.h                             \epoc32\include\Scallop\AudioUtils.h
+
+// End of File

@@ -1,0 +1,28 @@
+/* ====================================================================
+ * File: TextPane.rh
+ * Created: 12/05/09
+ * Modified: 12/05/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef TEXTPANE_RH
+#define TEXTPANE_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT TEXTPANE
+    {
+    LONG line;
+    LONG font;
+    LONG baseline;
+    LONG align;
+    LONG color;
+    LTEXT txt="";
+    }
+
+#endif // TEXTPANE_RH
+
+// End of File

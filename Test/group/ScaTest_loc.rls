@@ -1,0 +1,11 @@
+// ====================================================================
+// File: ScaTest_loc.rss
+// Created: 08/17/09
+// Author: Sun Jinbo
+// Copyright (c): Tieto, All rights reserved
+// ====================================================================
+
+//rls_string STRING_r_ScaTest_icon_path "z:\\resource\\apps\\ScaTesticon.mbm"
+rls_string STRING_short_caption "ScaTest"
+rls_string STRING_r_ScaTest_caption "ScaTest"
+

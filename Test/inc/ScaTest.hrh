@@ -1,0 +1,25 @@
+/* ====================================================================
+ * File: ScaTest.hrh
+ * Created: 08/17/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef __ScaTest_HRH__
+#define __ScaTest_HRH__
+
+/** ScaTest enumerate command codes */
+enum TScaTestIds
+    {
+    EScaTestStart = 1,  // start value must not be 0
+    EScaTestStop,
+    EScaTestPause,
+    EScaTestResume,
+    EScaTestRestart,
+    EScaTestRefresh,
+    EScaTestFuncKey,
+    EScaTestMake
+    };
+
+
+#endif // __ScaTest_HRH__

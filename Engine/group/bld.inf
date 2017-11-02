@@ -1,0 +1,29 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 06/13/09
+ * Modified: 08/16/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\Aquatic.hrh                \epoc32\include\Scallop\Aquatic.hrh
+..\inc\AquaticData.h              \epoc32\include\Scallop\AquaticData.h
+..\inc\AquaticData.inl            \epoc32\include\Scallop\AquaticData.inl
+..\inc\EngineCommon.h             \epoc32\include\Scallop\EngineCommon.h
+..\inc\EngineObserver.h           \epoc32\include\Scallop\EngineObserver.h
+..\inc\EngineBase.h               \epoc32\include\Scallop\EngineBase.h
+..\inc\EngineFactory.h            \epoc32\include\Scallop\EngineFactory.h
+..\inc\ClassicEngineFactory.h     \epoc32\include\Scallop\ClassicEngineFactory.h
+..\inc\StrategyEngineFactory.h    \epoc32\include\Scallop\StrategyEngineFactory.h
+
+..\level\\strategy\l1    \epoc32\winscw\c\private\e01ff1d2\strategy\l1
+..\level\\strategy\l2    \epoc32\winscw\c\private\e01ff1d2\strategy\l2
+
+PRJ_MMPFILES
+ScaEngine.mmp
+
+// End of file

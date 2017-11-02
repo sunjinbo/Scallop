@@ -1,0 +1,68 @@
+/* ====================================================================
+ * File: ScaEngine.mmp
+ * Created: 06/13/09
+ * Modified: 10/07/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+TARGET          ScaEngine.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xe01ff1d0
+
+SOURCEPATH      ..\src
+SOURCE          ScaEngine.cpp
+SOURCE          Matrix.cpp
+SOURCE          Aquatic.cpp
+SOURCE          Scallop.cpp
+SOURCE          StarFish.cpp
+SOURCE          ComboBehavior.cpp
+SOURCE          ClassicComboBehavior.cpp
+SOURCE          StrategyComboBehavior.cpp
+SOURCE          Scorekeeper.cpp
+SOURCE          ClassicScorekeeper.cpp
+SOURCE          StrategyScorekeeper.cpp
+SOURCE          ClassicEngineFactory.cpp
+SOURCE          StrategyEngineFactory.cpp
+SOURCE          EngineBase.cpp
+SOURCE          AquaticCreator.cpp
+SOURCE          ScaPath.cpp
+SOURCE          GameLevel.cpp
+SOURCE          GameLevelMgr.cpp
+SOURCE          FuncKeyUtils.cpp
+//SOURCE          ArcadeComboBehavior.cpp
+
+USERINCLUDE     ..\inc
+USERINCLUDE     ..\loc
+
+SYSTEMINCLUDE   \epoc32\include
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE           \epoc32\include\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\applications
+SYSTEMINCLUDE           \epoc32\include\domain\osextensions
+SYSTEMINCLUDE           \epoc32\include\osextensions
+SYSTEMINCLUDE           \epoc32\include\domain\middleware\loc
+#endif
+
+SOURCEPATH      ..\data
+
+START RESOURCE ScaEngine.rss
+HEADER
+TARGETPATH	\resource\apps
+END
+
+LIBRARY         euser.lib
+LIBRARY         bafl.lib
+LIBRARY         cone.lib
+LIBRARY         estor.lib
+LIBRARY         avkon.lib
+LIBRARY         eikcore.lib
+LIBRARY         efsrv.lib
+//#ifdef TRACE_INTO_FILE
+LIBRARY         flogger.lib
+//#endif
+
+CAPABILITY NONE
+
+// End of file

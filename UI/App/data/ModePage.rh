@@ -1,0 +1,31 @@
+/* ====================================================================
+ * File: ModePage.rh
+ * Created: 12/13/09
+ * Modified: 12/13/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef MODEPAGE_RH
+#define MODEPAGE_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT MODEPAGEARRAY
+    {
+    STRUCT pages[];
+    }
+
+STRUCT MODEPAGE
+    {
+    LONG bitmap;
+    LONG mask;
+    LTEXT title="";
+    LTEXT details="";
+    }
+
+#endif // MODEPAGE_RH
+
+// End of File

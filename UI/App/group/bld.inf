@@ -1,0 +1,51 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 10/23/09
+ * Modified: 10/23/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+#if defined __WINS__
+..\..\..\Engine\level\strategy\l1                \epoc32\winscw\c\private\e01ff1d2\strategy\l1
+..\..\..\Engine\level\strategy\l2                \epoc32\winscw\c\private\e01ff1d2\strategy\l2
+//..\..\..\Engine\level\strategy\l3                \epoc32\winscw\c\private\e01ff1d2\strategy\l3
+//..\..\..\Engine\level\strategy\l4                \epoc32\winscw\c\private\e01ff1d2\strategy\l4
+//..\..\..\Engine\level\strategy\l5                \epoc32\winscw\c\private\e01ff1d2\strategy\l5
+//..\..\..\Engine\level\strategy\l6                \epoc32\winscw\c\private\e01ff1d2\strategy\l6
+//..\..\..\Engine\level\strategy\l7                \epoc32\winscw\c\private\e01ff1d2\strategy\l7
+//..\..\..\Engine\level\strategy\l8                \epoc32\winscw\c\private\e01ff1d2\strategy\l8
+//..\..\..\Engine\level\strategy\l9                \epoc32\winscw\c\private\e01ff1d2\strategy\l9
+//..\..\..\Engine\level\strategy\l10               \epoc32\winscw\c\private\e01ff1d2\strategy\l10
+//..\..\..\Engine\level\strategy\l11                \epoc32\winscw\c\private\e01ff1d2\strategy\l11
+//..\..\..\Engine\level\strategy\l12                \epoc32\winscw\c\private\e01ff1d2\strategy\l12
+//..\..\..\Engine\level\strategy\l13                \epoc32\winscw\c\private\e01ff1d2\strategy\l13
+//..\..\..\Engine\level\strategy\l14                \epoc32\winscw\c\private\e01ff1d2\strategy\l14
+//..\..\..\Engine\level\strategy\l15                \epoc32\winscw\c\private\e01ff1d2\strategy\l15
+//..\..\..\Engine\level\strategy\l16                \epoc32\winscw\c\private\e01ff1d2\strategy\l16
+//..\..\..\Engine\level\strategy\l17                \epoc32\winscw\c\private\e01ff1d2\strategy\l17
+//..\..\..\Engine\level\strategy\l18                \epoc32\winscw\c\private\e01ff1d2\strategy\l18
+//..\..\..\Engine\level\strategy\l19                \epoc32\winscw\c\private\e01ff1d2\strategy\l19
+//..\..\..\Engine\level\strategy\l20                \epoc32\winscw\c\private\e01ff1d2\strategy\l20
+//..\..\..\Engine\level\strategy\l21                \epoc32\winscw\c\private\e01ff1d2\strategy\l21
+//..\..\..\Engine\level\strategy\l22                \epoc32\winscw\c\private\e01ff1d2\strategy\l22
+//..\..\..\Engine\level\strategy\l23                \epoc32\winscw\c\private\e01ff1d2\strategy\l23
+//..\..\..\Engine\level\strategy\l24                \epoc32\winscw\c\private\e01ff1d2\strategy\l24
+//..\..\..\Engine\level\strategy\l25                \epoc32\winscw\c\private\e01ff1d2\strategy\l25
+//..\..\..\Engine\level\strategy\l26                \epoc32\winscw\c\private\e01ff1d2\strategy\l26
+//..\..\..\Engine\level\strategy\l27                \epoc32\winscw\c\private\e01ff1d2\strategy\l27
+//..\..\..\Engine\level\strategy\l28                \epoc32\winscw\c\private\e01ff1d2\strategy\l28
+//..\..\..\Engine\level\strategy\l29                \epoc32\winscw\c\private\e01ff1d2\strategy\l29
+//..\..\..\Engine\level\strategy\l30                \epoc32\winscw\c\private\e01ff1d2\strategy\l30
+#endif // __WINS__
+
+
+PRJ_MMPFILES
+gnumakefile Scallopicons_aif.mk
+Scallop.mmp
+
+// End of File

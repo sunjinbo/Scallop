@@ -1,0 +1,3 @@
+#define R_DEFAULT_DOCUMENT_NAME                   0x5bdf9002
+#define R_SCALLOP_GAMELEVELLIST_STRATEGY          0x5bdf9003
+#define R_SCALLOP_GAMELEVELLIST_CLASSIC           0x5bdf9004

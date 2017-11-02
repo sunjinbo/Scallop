@@ -1,0 +1,6 @@
+<resources>
+  <rsc sourcefile = "ScaEngine.rss" targetpath = "z\resource\apps" targetfile = "ScaEngine.rsc"
+ header = "true" sourcepath = "..\data">
+    <language id = "SC"/>
+  </rsc>
+</resources>

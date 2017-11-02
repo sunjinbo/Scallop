@@ -1,0 +1,30 @@
+/* ====================================================================
+ * File: Scallop_loc.rss
+ * Created: 10/23/09
+ * Modified: 05/03/09
+ * Author: Sun Jinbo
+ * Copyright (c): TietoEnator, All rights reserved
+ * ==================================================================== */
+
+// INCLUDE FILES
+#include <appinfo.rh>
+#include "Scallop.loc"
+
+//
+// Application information
+//
+RESOURCE LOCALISABLE_APP_INFO
+    {
+    short_caption = qtn_scallop_short_caption_str;
+    caption_and_icon =
+        {
+        CAPTION_AND_ICON_INFO 
+            {
+            caption = qtn_scallop_caption_str;
+            number_of_icons = 1;
+            icon_file = "\\resource\\apps\\Scallop_icon.mif";
+            }
+        };
+    }
+
+// End of File

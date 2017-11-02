@@ -1,0 +1,53 @@
+/* ====================================================================
+ * File: bld.inf
+ * Created: 10/28/09
+ * Modified: 12/06/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+PRJ_MMPFILES
+gnumakefile bak.mk
+gnumakefile btn.mk
+gnumakefile matrix.mk
+gnumakefile scoreboard.mk
+gnumakefile checkbox.mk
+gnumakefile info.mk
+gnumakefile icon.mk
+gnumakefile board.mk
+
+ScaControl.mmp
+
+PRJ_EXPORTS
+..\data\Button.rh                  \epoc32\include\Scallop\Button.rh
+..\data\MenuBar.rh                  \epoc32\include\Scallop\MenuBar.rh
+..\data\Background.rh              \epoc32\include\Scallop\Background.rh
+..\data\Scoreboard.rh              \epoc32\include\Scallop\Scoreboard.rh
+..\data\ProgressBar.rh              \epoc32\include\Scallop\ProgressBar.rh
+..\data\TextPane.rh              \epoc32\include\Scallop\TextPane.rh
+..\data\Checkbox.rh              \epoc32\include\Scallop\Checkbox.rh
+..\data\InfoComponent.rh              \epoc32\include\Scallop\InfoComponent.rh
+..\data\Icon.rh              \epoc32\include\Scallop\Icon.rh
+..\data\Board.rh              \epoc32\include\Scallop\Board.rh
+
+..\inc\BaseContainer.h        \epoc32\include\Scallop\BaseContainer.h
+..\inc\ButtonObserver.h      \epoc32\include\Scallop\ButtonObserver.h
+..\inc\Button.h                      \epoc32\include\Scallop\Button.h
+..\inc\Background.h                  \epoc32\include\Scallop\Background.h
+..\inc\GraphicsLayer.h                  \epoc32\include\Scallop\GraphicsLayer.h
+..\inc\GraphicsManager.h                  \epoc32\include\Scallop\GraphicsManager.h
+..\inc\MenuBar.h                 \epoc32\include\Scallop\MenuBar.h
+..\inc\ResReader.h                 \epoc32\include\Scallop\ResReader.h
+..\inc\Matrix.h                 \epoc32\include\Scallop\Matrix.h
+..\inc\Scoreboard.h                 \epoc32\include\Scallop\Scoreboard.h
+..\inc\ProgressBar.h                 \epoc32\include\Scallop\ProgressBar.h
+..\inc\FuncKeyPane.h                 \epoc32\include\Scallop\FuncKeyPane.h
+..\inc\Icon.h                 \epoc32\include\Scallop\Icon.h
+..\inc\Board.h                 \epoc32\include\Scallop\Board.h
+..\inc\TextPane.h                 \epoc32\include\Scallop\TextPane.h
+..\inc\Checkbox.h                 \epoc32\include\Scallop\Checkbox.h
+..\inc\CheckboxObserver.h           \epoc32\include\Scallop\CheckboxObserver.h
+..\inc\InfoComponent.h           \epoc32\include\Scallop\InfoComponent.h
+..\inc\InfoComponentObserver.h           \epoc32\include\Scallop\InfoComponentObserver.h
+
+// End of File

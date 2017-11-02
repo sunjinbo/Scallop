@@ -1,0 +1,7 @@
+PRJ_MMPFILES
+#include "..\..\Engine\group\bld.inf"
+ScaTest.mmp
+
+PRJ_EXPORTS
+..\data\strategy\1.txt       \epoc32\winscw\c\private\0A9A1AC2\strategy\1.txt
+..\data\strategy\2.txt       \epoc32\winscw\c\private\0A9A1AC2\strategy\2.txt

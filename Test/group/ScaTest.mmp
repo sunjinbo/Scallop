@@ -1,0 +1,92 @@
+// ====================================================================
+// * File: ScaTest.mmp
+// * Created: 08/17/09
+// * Author: Sun Jinbo
+// * Copyright (c): Tieto, All rights reserved
+// * ====================================================================
+
+CAPABILITY None
+
+#ifdef __UI_FRAMEWORKS_V2__
+TARGETPATH	\sys\bin
+#if defined(EKA2) || !defined(WINS)
+TARGET          ScaTest.exe
+TARGETTYPE exe
+#else // EKA1 WINS
+TARGET          ScaTest.app
+TARGETTYPE exedll
+deffile \epoc32\release\wins\ScaTest.def
+#endif
+#else // __UI_FRAMEWORKS_V2__
+TARGET          ScaTest.app
+TARGETPATH      \system\apps\ScaTest
+TARGETTYPE app
+#endif
+
+UID               0x100039CE 0x0A9A1AC2
+
+LANG              SC
+
+SOURCEPATH        ..\src
+SOURCE            ScaTest.cpp
+SOURCE            ScaTestApplication.cpp 
+SOURCE            ScaTestAppView.cpp
+SOURCE            ScaTestAppUi.cpp
+SOURCE            ScaTestDocument.cpp 
+
+SOURCEPATH        ..\group
+
+
+USERINCLUDE       ..\inc 
+
+SYSTEMINCLUDE     \epoc32\include
+SYSTEMINCLUDE     \epoc32\include\Scallop
+#if defined ( __S60_50__ )
+SYSTEMINCLUDE           \epoc32\include\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\middleware
+SYSTEMINCLUDE           \epoc32\include\domain\applications
+SYSTEMINCLUDE           \epoc32\include\domain\osextensions
+SYSTEMINCLUDE           \epoc32\include\osextensions
+SYSTEMINCLUDE           \epoc32\include\domain\middleware\loc
+#endif
+
+LIBRARY           euser.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib 
+LIBRARY           eikcore.lib  
+LIBRARY           avkon.lib  
+
+LIBRARY           ScaEngine.lib
+
+LIBRARY                 gdi.lib
+LIBRARY                 bafl.lib
+LIBRARY                 ws32.lib
+LIBRARY                 bitgdi.lib
+LIBRARY                 fbscli.lib
+
+LIBRARY                estor.lib
+LIBRARY          efsrv.lib
+
+LIBRARY           scautils.lib
+
+#ifdef __UI_FRAMEWORKS_V2__
+START RESOURCE	ScaTest.RSS
+HEADER
+targetpath	\resource\apps
+lang		sc
+end
+#else
+RESOURCE        ScaTest.RSS 
+#endif
+
+#ifdef __UI_FRAMEWORKS_V2__
+sourcepath		.
+START RESOURCE	ScaTest_reg.rss
+TARGETPATH	\private\10003a3f\import\apps
+END
+   
+start resource ScaTest_loc.RSS
+targetpath \resource\apps
+lang sc
+end
+#endif

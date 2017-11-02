@@ -1,0 +1,21 @@
+// ====================================================================
+// File: ScaTest_reg.rss
+// Created: 08/17/09
+// Author: Sun Jinbo
+// Copyright (c): Tieto, All rights reserved
+// ==================================================================== */
+
+//ScaTest application's registration resource file 
+
+#include <appinfo.rh>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0x0A9A1AC2
+
+RESOURCE APP_REGISTRATION_INFO 
+	{
+	app_file="ScaTest";
+	//
+	localisable_resource_file="\\resource\\apps\\ScaTest_loc";
+	//
+	}

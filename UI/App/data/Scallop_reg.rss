@@ -1,0 +1,30 @@
+/* ====================================================================
+ * File: Scallop_Reg.rss
+ * Created: 10/23/09
+ * Modified: 10/23/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+//
+//Scallop application's registration resource file
+//
+
+// INCLUDE FILE
+#include <appinfo.rh>
+#include "Scallop.loc"
+
+// UID
+UID2 KUidAppRegistrationResourceFile
+UID3 0xe01ff1d2
+
+///////////////////////////////////////////////////
+// APPLICATION INFO
+///////////////////////////////////////////////////
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = qtn_scallop_app_title;
+    localisable_resource_file = "\\resource\\apps\\Scallop_loc";
+    }
+
+// End of File

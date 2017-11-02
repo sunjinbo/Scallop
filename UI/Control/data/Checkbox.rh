@@ -1,0 +1,34 @@
+/* ====================================================================
+ * File: Checkbox.rh
+ * Created: 12/05/09
+ * Modified: 12/05/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef CHECKBOX_RH
+#define CHECKBOX_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT CHECKBOX
+    {
+    LONG width;
+    LONG height;
+    LONG uncheck;
+    LONG uncheck_mask;
+    LONG check;
+    LONG check_mask;
+    LONG default_state;
+    LONG font;
+    LONG baseline;
+    LONG color;
+    LONG align;
+    LTEXT txt="";
+    }
+
+#endif // CHECKBOX_RH
+
+// End of File

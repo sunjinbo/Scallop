@@ -1,0 +1,77 @@
+/* ====================================================================
+ * File: ScaEngine.rss
+ * Created: 06/16/09
+ * Modified: 09/16/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+
+//  RESOURCE IDENTIFIER
+NAME SCEN    // 4 letter ID
+
+//  INCLUDES
+#include <eikon.rh>
+#include "ScaEngine.rh"
+#include "ScaEngine.loc"
+
+//  RESOURCE DEFINITIONS
+
+// -----------------------------------------------------------------------------
+//
+//    Define the resource file signature
+//    This resource should be empty.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Default Document Name
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name
+    {
+    buf = "ScaEngine";
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Configuration List
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE SCALLOPGAMELEVELLIST r_scallop_gamelevellist_strategy
+    {
+    list =
+        {
+        SCALLOPGAMELEVEL
+            {
+            id = 1;
+            time = 150;
+            score = 400;
+            bonus = 50;
+            type = "02,04,07";
+            prompt = qtn_scallop_combo;
+            },
+        SCALLOPGAMELEVEL
+            {
+            id = 2;
+            time = 150;
+            score = 600;
+            bonus = 50;
+            type = "02,04,07";
+            }
+        };
+    }
+
+RESOURCE SCALLOPGAMELEVELLIST r_scallop_gamelevellist_classic
+    {
+    ignorelist = 1;
+    }
+
+// End of File

@@ -1,0 +1,33 @@
+/* ====================================================================
+ * File: Background.rh
+ * Created: 10/31/09
+ * Modified: 10/31/09
+ * Author: Sun Jinbo
+ * Copyright (c): Tieto, All rights reserved
+ * ==================================================================== */
+
+#ifndef BACKGROUND_RH
+#define BACKGROUND_RH
+
+// INCLUDES
+
+// RESOURCE STRUCTS
+
+STRUCT BACKGROUND
+    {
+    LONG bak;
+    LONG mask;
+    STRUCT widgets[];
+    }
+
+STRUCT WIDGET
+    {
+    LONG width;
+    LONG height;
+    LONG bitmap;
+    LONG mask;
+    }
+
+#endif // BACKGROUND_RH
+
+// End of File
